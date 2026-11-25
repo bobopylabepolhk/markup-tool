@@ -1,0 +1,13 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 193px;
+  background-color: #eef0f2;
+  height: 4px;
+  border-radius: 2px;
+}

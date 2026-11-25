@@ -1,0 +1,19 @@
+.back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+  cursor: pointer;
+  p {
+    font-family: ABC, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.6%;
+    color: #000;
+  }
+}
+
+.arrow {
+  margin-top: 2px;
+}

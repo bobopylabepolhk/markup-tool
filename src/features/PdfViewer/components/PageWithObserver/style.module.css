@@ -1,0 +1,22 @@
+.pageWithHighlight {
+  position: relative;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  *::selection {
+    background-color: rgba(237, 128, 0, 0.25);
+  }
+
+  &.disableSelect {
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+.page {
+  border-radius: 10px;
+  overflow: hidden;
+  canvas,
+  & > div {
+    margin: 0 auto;
+  }
+}

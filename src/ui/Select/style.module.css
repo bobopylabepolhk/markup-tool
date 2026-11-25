@@ -1,0 +1,30 @@
+.select {
+  display: flex;
+  align-items: center;
+  outline: none;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #000;
+
+  min-height: 36px;
+  box-sizing: border-box;
+
+  padding: 4px 10px;
+}
+
+.value {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  font-family: ABC, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  color: rgba(0, 0, 0, 0.4);
+}

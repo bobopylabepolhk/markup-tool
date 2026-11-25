@@ -1,0 +1,166 @@
+.indicator {
+  width: 100%;
+  padding: 16px 12px;
+  border-bottom: 1px solid #dde2e4;
+
+  &.completed {
+    background: rgba(62, 153, 162, 0.07);
+    border: none;
+    .editBtn {
+      display: flex;
+    }
+  }
+}
+
+.name,
+.code {
+  font-family: ABC, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+}
+
+.name {
+  color: #3c464e;
+  &.withDescription {
+    text-decoration: underline dotted #84919a;
+    cursor: pointer;
+  }
+}
+
+.code {
+  color: #3c464e;
+}
+
+.tooltipContainer {
+  position: relative;
+}
+
+.descriptionTooltip {
+  top: -4px;
+  transform: translate(-50%, -100%);
+  left: 50%;
+}
+
+.confirmationTooltip {
+  white-space: nowrap;
+  top: -9px;
+  transform: translate(-50%, -100%);
+  left: calc(50% - 4px);
+}
+
+.check {
+  top: 3px;
+  left: 1px;
+}
+
+.subIndicators {
+  margin: 0;
+  padding-left: 18px;
+  margin-top: 4px;
+  li {
+    font-family: ABC;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #566572;
+    list-style-type: disc;
+    margin-top: 4px;
+
+    .itemContent {
+      margin-left: -4px;
+      &:hover .newHighlight {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    .pageNums {
+      margin-left: 4px;
+    }
+  }
+}
+
+.page {
+  border: 1px solid #6e7c87;
+  border-radius: 4px;
+  font-family: ABC;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #6e7c87;
+  padding: 2px 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 4px;
+  &.active {
+    color: #ffffff;
+    background-color: #945a3b;
+    border-color: #945a3b;
+  }
+
+  &.newHighlight {
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.groupTitle {
+  border-radius: 8px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.titleWithButton {
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    .code,
+    .name {
+      color: #000;
+    }
+    .groupTitle {
+      background-color: rgba(101, 99, 80, 0.33);
+      border-color: #86943b;
+      padding: 12px 8px 12px 18px;
+    }
+    .editBtn,
+    .confirmBtn {
+      opacity: 1;
+    }
+  }
+}
+
+.confirmBtn {
+  opacity: 0;
+}
+
+.editBtn {
+  opacity: 0;
+  display: none;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  width: 54px;
+  height: 32px;
+  border: 1px solid #dde2e4;
+  font-family: ABC, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.6%;
+  background-color: transparent;
+  color: #252c32;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: rgba(237, 128, 0, 0.25);
+}

@@ -1,0 +1,63 @@
+.tooltip {
+  box-shadow:
+    0px 8.83px 17.67px 0px #5b68713d,
+    0px 0px 1.1px 0px #1a202452;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 1000;
+  font-family: ABC, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #2a204d;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 314ms;
+  max-width: 360px;
+
+  &:global(.preEnter) {
+    opacity: 0;
+    scale: 1;
+  }
+
+  &:global(.entered) {
+    opacity: 1;
+    scale: 1;
+  }
+
+  &:global(.exiting) {
+    opacity: 0;
+  }
+
+  &:global(.exited) {
+    opacity: 0;
+    scale: 0;
+  }
+}
+
+.triangle {
+  position: absolute;
+  background-color: #fff;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  &.top {
+    top: -3px;
+  }
+
+  &.bottom {
+    top: calc(100% - 3px);
+  }
+
+  &.left {
+    left: 7px;
+  }
+
+  &.right {
+    right: 7px;
+  }
+
+  &.center {
+    left: calc(50%);
+  }
+}

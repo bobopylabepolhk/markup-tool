@@ -1,0 +1,81 @@
+.fakeLabel {
+  position: absolute;
+  left: 14px;
+  font-size: 10px;
+  top: -1px;
+  left: 6px;
+  height: 3px;
+  overflow: hidden;
+  padding-top: 2px;
+  background-color: #fff;
+  padding-left: 4px;
+  padding-right: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  color: transparent;
+}
+
+.label {
+  left: 7px;
+  top: 8px;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  color: #9aa6ac;
+  pointer-events: none;
+  .actualLabel {
+    transition: color 0.3s ease-out;
+    padding: 0px 4px;
+    white-space: nowrap;
+    &.error {
+      color: #cc0905;
+    }
+  }
+
+  &.disabled {
+    border-radius: 10px;
+    color: #6e7c87 !important;
+    background-color: #f6f8f9 !important;
+  }
+}
+
+.container {
+  position: relative;
+  &:global(.__elevate) {
+    .label {
+      top: -12px;
+      font-size: 10px;
+      left: 6px;
+      pointer-events: none;
+      color: #5b6871;
+    }
+
+    .actualLabel:global(.__error) {
+      color: #cc0905;
+    }
+
+    .fakeLabel {
+      opacity: 1;
+    }
+  }
+
+  &:global(.__active) {
+    .label {
+      color: #51b0b8;
+    }
+  }
+}
+
+.errorMsg {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f2271c;
+}

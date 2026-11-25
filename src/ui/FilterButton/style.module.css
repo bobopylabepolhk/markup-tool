@@ -1,0 +1,21 @@
+.filterButton {
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.025);
+  font-family: ABC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  color: #252c32;
+  width: min-content;
+  white-space: nowrap;
+
+  span {
+    color: #6e7c87;
+    white-space: nowrap;
+  }
+  &.active {
+    border-color: #51b0b8;
+    background-color: #11a5a533;
+  }
+}

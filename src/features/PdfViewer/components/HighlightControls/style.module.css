@@ -1,0 +1,28 @@
+.controls {
+  position: absolute;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-top: 12px;
+  z-index: 999;
+  transition: opacity 0.3s ease-in-out;
+  * {
+    user-select: none;
+  }
+  &.showOnHover {
+    opacity: 0;
+  }
+}
+
+.editIcon {
+  width: 20px;
+  height: 16px;
+}
+
+.cancel {
+  position: absolute;
+  top: 0px;
+  left: -21px;
+  cursor: pointer;
+  z-index: 999;
+}

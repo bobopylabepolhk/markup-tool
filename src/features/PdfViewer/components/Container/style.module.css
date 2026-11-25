@@ -1,0 +1,85 @@
+.container {
+  height: 100%;
+  position: relative;
+  max-width: 684px;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+.headerContainer {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+}
+
+.header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.025);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.fileControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 2;
+}
+
+.displayControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.thumbnailsBtn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.download {
+  border: 1px solid #000;
+  font-family: ABC, sans-serif;
+  font-weight: 400;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 16px;
+  line-height: 20px;
+  color: #000;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.docWithThumbnails {
+  display: flex;
+  gap: 22px;
+}
+
+.thumbnailContainer {
+  flex-shrink: 0;
+  padding-right: 8px !important;
+  padding-left: 8px;
+}
+
+.thumbnailContainer,
+.scrollableWrapper {
+  max-height: 780px;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

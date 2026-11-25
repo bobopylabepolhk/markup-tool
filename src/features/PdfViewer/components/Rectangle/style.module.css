@@ -1,0 +1,36 @@
+.rectangle {
+  position: relative;
+  background-color: rgba(237, 128, 0, 0.25);
+  border: 1px solid rgba(237, 126, 0, 0.5);
+  &.withHandles {
+    .handle {
+      display: block;
+    }
+  }
+}
+
+.handle {
+  position: absolute;
+  display: none;
+  width: 6px;
+  height: 6px;
+  border: 100%;
+  background-color: rgba(237, 128, 0);
+  border: 2px solid rgb(250, 135, 4);
+  border-radius: 100%;
+  &.top {
+    top: -3px;
+  }
+
+  &.bottom {
+    bottom: -3px;
+  }
+
+  &.left {
+    left: -3px;
+  }
+
+  &.right {
+    right: -3px;
+  }
+}

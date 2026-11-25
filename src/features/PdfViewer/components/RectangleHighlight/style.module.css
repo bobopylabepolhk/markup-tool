@@ -1,0 +1,11 @@
+.draggable {
+  z-index: 998;
+  &:hover .showOnHover {
+    opacity: 1 !important;
+  }
+}
+
+.highlightRect {
+  width: 100%;
+  height: 100%;
+}

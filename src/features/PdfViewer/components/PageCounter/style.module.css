@@ -1,0 +1,31 @@
+.pageCounter {
+  border: 1px solid #000;
+  padding: 8px 12px;
+  font-family: ABC, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  span {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.pageInput,
+.hiddenSpan {
+  outline: none;
+  border: none;
+  font-family: ABC, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  max-width: 80px;
+}
+
+.hiddenSpan {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  white-space: pre;
+  padding-right: 4px;
+}

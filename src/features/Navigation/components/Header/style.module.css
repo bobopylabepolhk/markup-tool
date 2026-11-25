@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  padding: 0 20px;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dde2e4;
+  top: 0;
+}
+
+.logo {
+  width: 34px;
+  height: 26px;
+}
+
+.leftBlock {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}

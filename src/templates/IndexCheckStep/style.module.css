@@ -1,0 +1,23 @@
+.h2 {
+  margin-top: 36px;
+  margin-bottom: 16px;
+  font-family: ABC, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -1.9%;
+}
+
+.h1 {
+  font-family: Affix;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.container {
+  width: 588px;
+}
+
+.continueBtn {
+  margin-top: 24px;
+}

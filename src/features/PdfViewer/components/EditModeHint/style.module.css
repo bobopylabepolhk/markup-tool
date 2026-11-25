@@ -1,0 +1,84 @@
+.editMode {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.cancel {
+  border-radius: 6px;
+  width: 54px;
+  height: 32px;
+  border: 1px solid #dde2e4;
+  font-family: ABC, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.6%;
+  background-color: transparent;
+  color: #252c32;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selectionTypes {
+  box-shadow:
+    0px 24px 32px 0px #5b68713d,
+    0px 0px 1px 0px #1a202452;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.selectionType {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &.leftCutoffBorder {
+    border-radius: 6px 0 0 6px;
+  }
+
+  &.rightCutoffBorder {
+    border-radius: 0 6px 6px 0;
+  }
+  .tooltip {
+    opacity: 0;
+    scale: 0;
+    white-space: nowrap;
+    margin-top: 92px;
+    margin-left: -5px;
+  }
+
+  &:hover .tooltip {
+    opacity: 1;
+    scale: 1;
+  }
+
+  &.active {
+    background-color: rgba(25, 134, 144, 0.2);
+    svg path {
+      fill: rgba(25, 134, 144, 1);
+    }
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    path {
+      fill: #6e7c87;
+    }
+  }
+}

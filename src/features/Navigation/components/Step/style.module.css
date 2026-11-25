@@ -1,0 +1,45 @@
+.step {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6e7c87;
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+  cursor: pointer;
+  &[data-is-active='true'] p {
+    font-weight: 600;
+    color: #198690;
+  }
+
+  p {
+    font-family: ABC, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.006em;
+  }
+}
+
+.circle {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: -0.006em;
+  text-align: center;
+  color: #6e7c87;
+  transition: all 0.3s ease-in-out;
+  background-color: #eef0f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  &[data-is-active='true'] {
+    font-weight: 600;
+    color: #198690;
+    background-color: rgba(25, 134, 144, 0.2);
+  }
+}

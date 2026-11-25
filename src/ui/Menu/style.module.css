@@ -1,0 +1,31 @@
+.menu {
+  padding: 14px 12px;
+  box-shadow:
+    0px 12px 24px 0px #5b68713d,
+    0px 0px 1px 0px #1a202452;
+  border: 1px solid #f6f8f9;
+  background: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.item {
+  width: 100%;
+  padding: 2px 8px;
+  font-family: ABC, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  color: #252c32;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f6f8f9;
+  }
+}

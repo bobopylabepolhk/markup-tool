@@ -1,0 +1,16 @@
+.textHighlight {
+  position: absolute;
+  &:hover .controls {
+    opacity: 1;
+  }
+}
+
+.box {
+  background-color: rgba(237, 128, 0, 0.25);
+  position: absolute;
+  z-index: 998;
+}
+
+.controls {
+  bottom: -44px;
+}

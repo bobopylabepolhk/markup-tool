@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.indicatorsLabel {
+  font-family: Affix, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -2.2%;
+  color: #252c32;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.indicatorsList {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.noIndicators {
+  font-family: ABC, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  text-align: center;
+  color: #84919a;
+  margin-top: 28px;
+}
+
+.save {
+  height: 40px;
+}

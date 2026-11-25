@@ -1,0 +1,35 @@
+.docs {
+  width: 698px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  left: 0px;
+  transform: translateX(-100%);
+  &.open {
+    position: static;
+    transform: translateX(0px);
+  }
+}
+
+.indicators {
+  transition: all 0.3s ease-in-out;
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+  transform: translateX(0px);
+  will-change: transform, max-width;
+  padding: 41px 48px 0 48px;
+  &.shrink {
+    margin: 0;
+  }
+}
+
+.docsToggle {
+  position: fixed;
+  margin-top: 40px;
+}
+
+.indicatorsToggle {
+  position: absolute;
+  left: 0px;
+  top: 66px;
+}
